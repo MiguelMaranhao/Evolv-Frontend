@@ -1,0 +1,33 @@
+.bottom-nav {
+  position: absolute; /* Mudamos de fixed para absolute */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--bg-card);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #222;
+  z-index: 1000;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-item.active {
+  color: var(--evolv-green);
+}
+
+.nav-item.active svg {
+  border-bottom: 2px solid var(--evolv-green);
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
